@@ -1,0 +1,23 @@
+/* Video Styles */
+.gallery-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #C3A635; /* Updated border color */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transition for effects */
+    cursor: pointer; /* Indicates the video thumbnail is clickable */
+}
+
+/* Hover effect to expand video slightly */
+.gallery-video:hover {
+    transform: scale(1.05); /* Slight expansion on hover */
+}
+
+/* Thumbnail Title */
+.thumbnail-title {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #C2185B;
+}

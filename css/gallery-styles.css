@@ -1,0 +1,65 @@
+/* Gallery Images */
+.gallery-img {
+    width: 100%;
+    height: 200px; /* Set the square size */
+    object-fit: cover;
+    border: 2px solid #C3A635; /* Updated border color */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth transition for effects */
+    cursor: pointer; /* Indicates the image is clickable */
+}
+
+/* Hover effect to expand image slightly */
+.gallery-img:hover {
+    transform: scale(1.05); /* Slight expansion on hover */
+}
+
+/* Click effect to shrink image slightly */
+.gallery-img:active {
+    transform: scale(0.95); /* Slight shrinkage on click */
+}
+
+/* Popup container */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Less darkening effect */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the popup content horizontally */
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show the popup */
+.popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Popup content container */
+.popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image in the popup vertically */
+    width: 100%;
+    height: 100%;
+}
+
+/* Popup content (image) */
+.popup-content img {
+    max-width: 50%; /* 50% size of the window */
+    max-height: 50%; /* Maintain aspect ratio */
+    border: 4px solid #C3A635; /* Updated border color for the popup */
+    transition: transform 0.3s ease; /* Smooth transition for enlarging/shrinking */
+    transform: scale(1); /* Initial scale */
+}
+
+/* Enlarged state */
+.popup-content img.enlarged {
+    transform: scale(1.5); /* Enlarge to 60% when clicked */
+}
