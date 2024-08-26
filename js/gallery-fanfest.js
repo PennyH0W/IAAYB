@@ -14,9 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "images/fan-fest-9.png",
         "images/fan-fest-10.png",
         "images/fan-fest-11.webp",
-        "images/fan-fest-12.webp",
-        "images/fan-fest-13.webp",
-        "images/fan-fest-14.webp"
+        "images/fan-fest-12.webp"
     ];
 
     images.forEach(image => {
