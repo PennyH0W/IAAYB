@@ -6,42 +6,42 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             url: "https://youtu.be/BaNZRI0uQi4",
             thumbnail: "https://img.youtube.com/vi/BaNZRI0uQi4/hqdefault.jpg",
-            title: "Mystery Dance"
+            title: "Voulez Vou<br>St. Pete"
         },
         {
             url: "https://youtu.be/WrvhcOIYJXU",
             thumbnail: "https://img.youtube.com/vi/WrvhcOIYJXU/hqdefault.jpg",
-            title: "Rhythm in Motion"
+            title: "Voulez Vou<br>Palentines Show"
         },
         {
             url: "https://youtu.be/yQtd1kDPamE",
             thumbnail: "https://img.youtube.com/vi/yQtd1kDPamE/hqdefault.jpg",
-            title: "Echoes of the Past"
+            title: "Rabiosa<br>Greek Hafla"
         },
         {
             url: "https://youtu.be/Hd7f_bf78ZE",
             thumbnail: "https://img.youtube.com/vi/Hd7f_bf78ZE/hqdefault.jpg",
-            title: "Moonlight Serenade"
+            title: "Superstars<br>Palentine's Show"
         },
         {
             url: "https://youtu.be/u1MCNmxrkiw",
             thumbnail: "https://img.youtube.com/vi/u1MCNmxrkiw/hqdefault.jpg",
-            title: "Whispers in the Dark"
+            title: "Rythm<br>Palentine's Show"
         },
         {
             url: "https://youtu.be/W7JkozPkCWQ",
             thumbnail: "https://img.youtube.com/vi/W7JkozPkCWQ/hqdefault.jpg",
-            title: "Dance of the Spirits"
+            title: "Voulez Vou<br>Palentine's Show"
         },
         {
             url: "https://youtu.be/KatF1QD_YkI",
             thumbnail: "https://img.youtube.com/vi/KatF1QD_YkI/hqdefault.jpg",
-            title: "Fire and Ice"
+            title: "Folkloric<br>Oldsmar Talent Show"
         },
         {
             url: "https://youtu.be/FeJRYLvxFpk",
             thumbnail: "https://img.youtube.com/vi/FeJRYLvxFpk/hqdefault.jpg",
-            title: "Echoes of Eternity"
+            title: "Santa Baby<br>Russian Hafla"
         }
     ];
 
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const titleDiv = document.createElement('div');
         titleDiv.className = 'thumbnail-title';
-        titleDiv.textContent = video.title;
+        titleDiv.innerHTML = video.title; // Use innerHTML to interpret the <br> tags
 
         anchorElement.appendChild(imgElement);
         colDiv.appendChild(anchorElement);

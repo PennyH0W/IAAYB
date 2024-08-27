@@ -149,15 +149,16 @@ footer .brand-logo img {
 ============================== */
 /* Toggle navbar and hamburger show/hide */
 .navbar-toggler {
+    display: none;
     background: transparent;
     border: none;
     font-size: 24px;
     cursor: pointer;
     margin-left: auto; /* Push the hamburger icon to the right */
     padding: 0; /* Remove padding */
-    border: 2px solid hotpink; /* Hot pink border */
+    border: 2px solid hotpink; /* Gold border */
     border-radius: 4px; /* Optional: add some border-radius for rounded corners */
-    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition */
+    transition: border-color 0.3s ease-in-out; /* Smooth transition */
 }
 
 .hamburger {
@@ -177,27 +178,6 @@ footer .brand-logo img {
     height: 4px; /* Thickness of the bars */
     background-color: hotpink; /* Color of the bars */
     display: block;
-}
-
-/* Active and focus state for the hamburger menu */
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.hamburger span:focus,
-.hamburger span:active {
-    outline: none; /* Remove the default focus outline */
-    border-color: #C3A635; /* Gold border color */
-    background-color: transparent; /* Keep background transparent */
-}
-
-/* Change the color of the hamburger bars when active */
-.navbar-toggler:focus .hamburger span,
-.navbar-toggler:active .hamburger span {
-    background-color: #C3A635; /* Change the bar color to match the navbar color */
-}
-
-/* Ensure that the bars don't turn black when clicked */
-.hamburger span {
-    transition: background-color 0.3s ease-in-out; /* Smooth transition for color change */
 }
 
 /* ==========================
@@ -280,7 +260,7 @@ footer .brand-logo img {
 
 /* Headings Styles */
 h1, h2, h3, h4 {
-    font-family: 'Dancing Script', 'Pacifico', 'Great Vibes', cursive, 'Georgia', serif;
+    font-family: 'Dancing Script', 'Pacifico', 'Great Vibes', 'Georgia', 'serif';
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
@@ -863,7 +843,6 @@ footer {
 .thumbnail-img:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    color: #C3A635;
 }
 
 .thumbnail-container {
